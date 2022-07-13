@@ -1,5 +1,3 @@
-# AIC22 MTMC (Track 1) -- Team 10 solution
-
 ## Solution pipeline
 * Use an one-stage detector (YOLOv5) and three ReID models for vehicle detection and feature extraction.
 * Use motion--based [ByteTrack](https://github.com/ifzhang/ByteTrack) to against the similar appearence problem. Meanwhile, improve ByteTrack with some occlusion handling strategies.  
