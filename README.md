@@ -11,35 +11,6 @@ Python 3.8 or later with dependencies listed in `requirements.txt`. Run the belo
 pip install -r requirements.txt
 ```
 
-## Preparation
-* Dataset  
-    If you want to run the whole pipeline of our solution,please download the datasets from [AI City Challenge 2022](https://www.aicitychallenge.org/2022-data-and-evaluation/). When you download the dataset successfully, move the dataset to `./datasets` . Make sure the directory tree like the below structure:  
-    ```
-    -- ROOT
-     | -- datasets
-        | -- AIC22_Track1_MTMC_Tracking
-           | -- test
-           | -- ...
-    ```
-
-* Intermidiate Results  
-    Meanwhile, we provide the intermidiate results for reproducing rapidly, which include `Detection Boxes` and `ReID features`, you can download them from [Google Drive](https://drive.google.com/file/d/13eHo1gwa8TzD2JHfd6vFPZxxY9TqnuhI/view?usp=sharing) or [Baidu Drive (提取码:4dhe)](https://pan.baidu.com/s/1jPfQr7lAd63N0y2dKBQHfw).  
-
-    Unzip the downloaded file, move the unzipped directory to `./datasets`. Make sure the directory tree like the below structure:  
-
-    ```
-    -- ROOT
-     | -- datasets
-        | -- AIC22_Track1_MTMC_Tracking
-           | -- test
-           | -- ...
-        | -- test_reproduce
-           | -- detect_reid1
-           | -- detect_reid2
-           | -- detect_reid3
-           | -- detect_result
-           | -- feature_merge
-    ```
 
 * Models  
     In the solution, we use [YOLOv5](https://github.com/ultralytics/yolov5)  for vehicle detection, and use three [ReID models](https://github.com/LCFractal/AIC21-MTMC) provided from the AI City Challenge 2021 winner. You can download all models form [Google Drive](https://drive.google.com/drive/folders/1WVRH_4d0Gwad3_SaDNI8oZ2xqbBW1BUj?usp=sharing) or [Baidu Drive (提取码:pfs6)](https://pan.baidu.com/s/1RsqcH2jRR9GMpMWDbKGJyA).  
